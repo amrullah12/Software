@@ -56,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<ResponseEvent> call, retrofit2.Response<ResponseEvent> response) {
 
+                progressDialog.dismiss();
+
                 aktif = response.body().getResponse().getData();
                 recyclerAdapter = new RvAll(MainActivity.this, aktif);
                 mRecyclerview.setAdapter(recyclerAdapter);
