@@ -47,7 +47,7 @@ public class RvAll extends RecyclerView.Adapter<RvAll.ViewHolder> {
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             namaAplikasi = itemView.findViewById(R.id.idNama);
-            Deskripsi = itemView.findViewById(R.id.allid);
+            Deskripsi = itemView.findViewById(R.id.idDeskripsi);
             Pengguna = itemView.findViewById(R.id.idPengguna);
             Url = itemView.findViewById(R.id.idUrl);
             aktif = itemView.findViewById(R.id.idAktif);
